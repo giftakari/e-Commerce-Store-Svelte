@@ -1,3 +1,7 @@
+![Screenshot 2023-01-20 at 05-04-34 Screenshot](https://user-images.githubusercontent.com/37270379/213537399-9af580f7-c87b-409e-9fa2-500f363903cf.png)
+
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
