@@ -56,7 +56,7 @@
 		<!-- promise was fulfilled -->
 
 		{#each values as product}
-			<div>
+			<div class="container">
 				<div class="image" style="background-image: url({product.image})" />
 				<h4>{product.title.slice(0, 10)}</h4>
 				<p>${product.price}</p>
@@ -79,7 +79,7 @@
 					<button on:click={() => plusItem(item)}>+</button>
 					<button on:click={() => minusItem(item)}>-</button>
 				</div>
-				<p>$ {item.price * item.quantity}</p>
+				<p>$ {item.price}</p>
 			</div>
 		{/if}
 	{/each}
@@ -87,12 +87,7 @@
 		<h4>Total: $ {total}</h4>
 	</div>
 </div>
-<p>
-	<a
-		href="https://www.youtube.com/watch?v=0NtugwTVW5Q&list=PLm_Qt4aKpfKgN-CKxJaLcfcTkpU_vjqQO&index=1"
-		>Watch the tutorial</a
-	>
-</p>
+
 
 <style>
 	.product-list,
@@ -102,6 +97,11 @@
 		column-gap: 50px;
 		row-gap: 50px;
 		justify-content: center;
+	}
+	.container {
+		justify-content: center;
+
+		margin-left: 10%;
 	}
 
 	.image {
